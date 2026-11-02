@@ -1,0 +1,26 @@
+# Alleen vooraf gecontroleerde bronbestanden mogen in een uitgave.
+/*
+!/.gitignore
+!/COPYING
+!/COPYRIGHT-STATUS.md
+!/README.md
+!/requirements.txt
+!/nutcracker_id.py
+!/start_nutcracker_id.ps1
+!/start_kopdetectie_review.ps1
+!/PUBLICATIEBESTANDEN.txt
+!/SHA256SUMS
+!/docs/
+/docs/*
+!/docs/METHODE.md
+!/docs/ARCHITECTUUR.md
+!/docs/ZOEKEN_EN_BETROUWBAARHEID.md
+!/docs/VALIDATIEPLAN.md
+!/docs/LICENTIES.md
+!/docs/TECHNISCHE_CONTROLE.md
+!/scripts/
+/scripts/*
+!/scripts/controleer_publicatie.py
+!/tests/
+/tests/*
+!/tests/test_synthetic.py
