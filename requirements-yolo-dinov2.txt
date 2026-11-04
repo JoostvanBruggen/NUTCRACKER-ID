@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+# Copyright (C) 2026 Joost van Bruggen — NUTCRACKER-ID
+-r requirements.txt
+torch==2.9.0
+ultralytics==8.4.201

@@ -143,3 +143,11 @@ hashes gecontroleerd, alle Python-bestanden op syntax gecontroleerd en de lokale
 documentverwijzingen nagekeken. De openbare bestandenlijst, .gitignore en
 SHA256SUMS zijn voor de twee nieuwe documenten bijgewerkt.
 Dit is geen bewijs van implementatie of gekalibreerde herkenningsnauwkeurigheid.
+
+## Aanvulling: YOLO26n-seg/DINOv2-voorbereiding — 4 november 2026
+
+Toegevoegd aan de lokale publicatievoorbereiding: yolo_dinov2_pipeline.py, de optionele dependencylijst, voorbeeldconfiguratie, handleiding en synthetische tests. De module heeft aparte route A (volledige foto) en route B (YOLO-masker met neutrale RGB-achtergrond), gebruikt dezelfde DINOv2 ViT-B/14 preprocess en cosine-methode en weigert niet-lokale YOLO-gewichten. De DINOv2-adapter eist de vastgezette bronrevisie en checkpointhash. Meervoudige, ontbrekende of onbruikbare maskers krijgen geen route-B-score en verschijnen in te_controleren.json.
+
+Vier nieuwe tests slaagden met de reeds bestaande Windows/Python 3.12.14/NumPy 2.3.5/Pillow 12.3.0-omgeving. Alleen zelfgemaakte geometrische afbeeldingen en nagebootste detector/encoder zijn gebruikt. Ook de bestaande synthetische tests en de exacte openbare bestanden-/hashcontrole zijn opnieuw uitgevoerd. Er zijn geen pakketten geïnstalleerd, modellen geladen, gewichten gedownload, echte onderzoeksfoto's verwerkt of identiteitssleutels geraadpleegd.
+
+Deze tests bewijzen geen YOLO-detectiekwaliteit, maskerkwaliteit, DINOv2-herkenningswinst of wetenschappelijke validiteit. De 0,25 detectiegrens en 0,5%–90% maskergrootte zijn alleen voorlopige kwaliteitsvlaggen. De route is niet met echte modellen getest; er is geen schone installatie getest. De privébevestiging van Ultralytics is niet meegeleverd of onafhankelijk gecontroleerd. De nieuwe toepasselijke bestanden zijn nog niet naar GitHub gepubliceerd.

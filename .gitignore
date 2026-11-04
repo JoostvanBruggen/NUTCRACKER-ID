@@ -24,3 +24,17 @@
 !/tests/
 /tests/*
 !/tests/test_synthetic.py
+
+# Lokale modelbestanden en YOLO/DINOv2-resultaten
+/modellen/
+/resultaten-yolo-dinov2/
+/.venv/
+__pycache__/
+*.py[cod]
+
+
+# Modelbestanden en lokale uitkomsten van de optionele YOLO/DINOv2-route
+/modellen/
+/resultaten-yolo-dinov2/
+*.pt
+*.pth

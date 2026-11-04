@@ -20,3 +20,5 @@ Wijzigingen voor deze voorbereide versie, 2 november 2026: veilige hulpstart,
 expliciete invoer, herstelde rapportverwijzingen, consistente kandidaatgroepen,
 tests met fictieve beelden en afgeronde installatie- en licentiedocumentatie.
 De code is experimenteel en wordt geleverd zonder garantie; zie COPYING.
+
+Optionele YOLO/DINOv2-voorbereiding, 4 november 2026: de nieuwe pipeline, synthetische test, voorbeeldconfiguratie en optionele dependencylijst zijn projectbestanden en dragen dezelfde copyright- en SPDX-vermelding. De owner-reported Ultralytics-brief is niet meegeleverd of onafhankelijk gecontroleerd. YOLO/DINOv2-code en gewichten worden niet meegeleverd.

@@ -54,3 +54,9 @@ voor latere code. Na afzonderlijke toestemming:
 
 Dit is de gekozen route volgens de instructie van de eigenaar, geen algemene
 uitspraak dat elk privégebruik van alle AGPL-programma's verboden is.
+
+## Optionele YOLO/DINOv2-afhankelijkheden
+
+`requirements-yolo-dinov2.txt` noemt uitsluitend directe, vastgezette versies van PyTorch en Ultralytics plus de bestaande projectvereisten. Het is geen volledige hash-lock van alle transitieve pakketten. Deze optionele pakketten worden niet geïnstalleerd bij de basisinstallatie en er worden geen modelgewichten meegeleverd. Controleer vlak vóór installatie opnieuw de pakketmetadata, licenties en voorwaarden van de exacte versies en hun transitieve afhankelijkheden. De DINOv2-broncode en gewichten vallen onder hun eigen Apache-2.0-voorwaarden; de betreffende bron en gewichten zijn niet in deze map opgenomen.
+
+De projecteigenaar meldt schriftelijke bevestiging van Ultralytics voor de gekozen AGPL-route. Die privébevestiging is niet bijgevoegd en is hier niet geverifieerd. Deze handleiding presenteert dit daarom als een door de eigenaar gemelde afspraak, niet als onafhankelijk vastgestelde juridische toestemming. Volgens de officiële Ultralytics-licentie-informatie moet vóór gebruik opnieuw worden vastgesteld dat de volledige toepasselijke broncode publiek beschikbaar is en aan de gekozen voorwaarden voldoet.

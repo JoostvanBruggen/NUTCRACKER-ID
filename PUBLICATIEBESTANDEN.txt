@@ -9,10 +9,15 @@ docs/LICENTIES.md
 docs/METHODE.md
 docs/TECHNISCHE_CONTROLE.md
 docs/VALIDATIEPLAN.md
+docs/YOLO_DINOV2.md
 docs/ZOEKEN_EN_BETROUWBAARHEID.md
 nutcracker_id.py
+requirements-yolo-dinov2.txt
 requirements.txt
 scripts/controleer_publicatie.py
 start_kopdetectie_review.ps1
 start_nutcracker_id.ps1
 tests/test_synthetic.py
+tests/test_yolo_dinov2_synthetic.py
+yolo_dinov2_config.example.json
+yolo_dinov2_pipeline.py

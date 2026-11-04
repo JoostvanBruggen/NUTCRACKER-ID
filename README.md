@@ -2,7 +2,7 @@
 
 Experimenteel lokaal prototype voor vergelijking van lichte verenkenmerken en
 voorstellen van kopuitsneden. Scores en kandidaatgroepen bewijzen geen identiteit.
-Deze uitgave gebruikt NumPy en Pillow; YOLO is niet opgenomen.
+De basisversie gebruikt NumPy en Pillow. De optionele YOLO26n-seg/DINOv2-integratie staat apart beschreven in [docs/YOLO_DINOV2.md](docs/YOLO_DINOV2.md); modellen en gewichten zijn niet opgenomen.
 
 ## Algemeen hulpmiddel, geen vaste testomvang
 
@@ -117,6 +117,11 @@ Relatieve invoer- en uitvoerpaden van deze startscripts worden ten opzichte van
 de projectmap gelezen. Desgewenst kun je -PythonExecutable opgeven; er is geen
 automatische keuze van een persoonlijke Codex-installatie.
 
+## Optionele YOLO26n-seg- en DINOv2-route
+
+De aparte module `yolo_dinov2_pipeline.py` bereidt twee routes voor: DINOv2 op de volledige foto en dezelfde vastgezette DINOv2 op een YOLO-masker met neutrale achtergrond. Maskers met geen, meerdere of onbetrouwbare detecties krijgen geen route-B-score. Deze module is niet met echte modellen of onderzoeksfoto's uitgevoerd. De maskergrenzen zijn voorlopige technische signalen.
+
+Lees [de YOLO/DINOv2-handleiding](docs/YOLO_DINOV2.md) voor de optionele afhankelijkheden, lokale modelpaden, uitvoer, synthetische tests en de vereiste publicatievolgorde. De optionele pakketten staan apart in `requirements-yolo-dinov2.txt`; de gewone installatie haalt ze niet binnen.
 ## Grenzen en publicatie
 
 Lees [de methode](docs/METHODE.md) en
@@ -141,3 +146,4 @@ toepasselijke broncode openbaar zijn. Alleen dit prototype openbaar maken dekt
 geen toekomstige niet-gepubliceerde YOLO-integratie. Publiceer ook de toepasselijke
 nieuwe code, scripts en configuratie uiterlijk bij het eerste gebruik.
 Zie [docs/LICENTIES.md](docs/LICENTIES.md).
+

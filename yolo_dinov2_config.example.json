@@ -1,0 +1,9 @@
+{
+  "photos": "./voorbeeldfotos",
+  "output": "./resultaten-yolo-dinov2",
+  "yolo_weights": "./modellen/yolo26n-seg.pt",
+  "dinov2_repo": "./modellen/dinov2",
+  "dinov2_checkpoint": "./modellen/dinov2_vitb14_pretrain.pth",
+  "score_threshold": 0.90,
+  "dino_code_revision": "12592a9bdfea0a6e4ee4767cd5a8d3195c0e3509"
+}
